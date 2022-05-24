@@ -136,8 +136,8 @@ server.post('/dia2/ingressocinema', (req, resp) => {
 
 server.post('/dia2/maiornumero', (req, resp) => {
     try{
-        const { a: num1 } = req.body;
-    const resposta = media(num1);
+        const {a: num1} = req.body;
+        const resposta = maiornumero(num1);
     resp.send({
         maior: resposta
     })
