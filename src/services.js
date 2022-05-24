@@ -51,6 +51,7 @@ function cinema(inteira, meia, dia, nacao){
         int = 14.25 * inteira
         return int + mei
     }
+    return mei + int
 }
 
 // get

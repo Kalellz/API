@@ -122,7 +122,7 @@ server.get('/dia2/corprimaria/:cor', (req,resp) => {
 server.post('/dia2/ingressocinema', (req, resp) => {
     try{
     const { a: num1, b: num2, c: num3, d:num4 } = req.body;
-    const resposta = cinema(num1, num2, num3, num4);
+    const resposta = cinema(num1, num2, num3, num4)
     resp.send({
         total: resposta
     })
